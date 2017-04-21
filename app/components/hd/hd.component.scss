@@ -1,0 +1,94 @@
+$fa-font-path: "../node_modules/font-awesome/fonts";
+@import '~font-awesome/scss/font-awesome';
+:host {
+  width: 100%;
+}
+go
+.header {
+  height: 90px;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+}
+
+.search{
+  margin-left: 65px;
+}
+
+.fa-search {
+  color: #d1d8e2;
+}
+
+.search__input {
+  border: none;
+  font-size: 18px;
+}
+
+.header__right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user__avatar {
+  height: 50px;
+  width: 50px;
+}
+
+.user__avatar-img {
+  max-height: 40px;
+  max-width: 40px;
+  border-radius: 50%;
+  border: 5px solid #ebf3fa;
+}
+
+.user__name {
+  height: 30px;
+  width: 115px;
+  background: #ebf3fa;
+  border-radius: 0 10px 10px 0;
+  font-size: 12px;
+  display: flex;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 10px;
+    background: #ebf3fa;
+    position: absolute;
+    right: 110px;
+  }
+}
+
+.fa-angle-down {
+  color: #4fc1ee;
+  padding-left: 30px;
+}
+
+.logout {
+  width: 75px;
+  height: 28px;
+  background: #4fc1ee;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 12px;
+  margin-right: 35px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

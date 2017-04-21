@@ -1,0 +1,110 @@
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 0;
+}
+:host {
+  display: flex;
+  height: 350px;
+  width: 32%;
+  margin: 20px;
+}
+
+.market-trends {
+  height: 350px;
+  width: 100%;
+  border: 2px solid #e4ebf1;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  background: #fff;
+}
+
+.market-trends__head {
+  height: 50px;
+  flex-basis: 100%;
+  background: #f9fafb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #e4ebf1;
+}
+
+.portfolio__title {
+  margin-left: 20px;
+  color: #4d5664;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.period {
+  color: #b4bfd1;
+  font-size: 12px;
+  margin-right: 50px;
+}
+
+.equity {
+  margin-left: 35px;
+}
+
+.debt {
+  margin-right: 35px;
+}
+
+.total {
+  font-size: 28px;
+  color: #12aaeb;
+}
+
+.equity__content {
+  color: #597a96;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+
+  &:before {
+    content: "";
+    height: 10px;
+    width: 11px;
+    background: #cae3ed;
+    border-top: 2px solid #bde8f9;
+    border-bottom: 2px solid #bde8f9;
+    box-sizing: border-box;
+  }
+}
+
+
+.debt__content {
+  color: #b4bfd1;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+
+  &:before {
+    content: "";
+    height: 11px;
+    width: 10px;
+    background: #cae3ed;
+    border-top: 2px solid #e3f0f5;
+    border-bottom: 2px solid #bde8f9;
+    box-sizing: border-box;
+  }
+}
+
+.market-trends__content {
+  margin: 0 30px;
+}
+
+.market-trends__bottom-date {
+  display: flex;
+  margin: 0 30px;
+}
+
+.bottom-date__list-market-trends {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+}

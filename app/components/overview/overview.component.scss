@@ -1,0 +1,88 @@
+:host {
+  padding: 20px 15px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+/*.overview {
+  padding: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}*/
+
+.invest {
+  height: 96px;
+  width: 244px;
+  background: #fff;
+  border: 2px solid #e4ebf1;
+  //margin-right: 10px;
+  margin: 0 5px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.expence {
+  height: 96px;
+  width: 244px;
+  background: #fff;
+  border: 2px solid #e4ebf1;
+  //margin-right: 10px;
+  margin: 0 5px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.revenue {
+  height: 96px;
+  width: 244px;
+  background: #fff;
+  border: 2px solid #e4ebf1;
+  //margin-right: 10px;
+  margin: 0 5px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.balance {
+  height: 96px;
+  width: 244px;
+  background: #fff;
+  border: 2px solid #e4ebf1;
+  margin: 0 5px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.overview__icon {
+  width: 68px;
+  height: 68px;
+  border-bottom: 2px solid #e4ebf1;
+  display: flex;
+}
+
+.overview__text {
+  margin: auto;
+}
+.icon {
+  max-width: 68px;
+  max-height: 68px;
+  margin: auto;
+}
+
+.price {
+  color: #546a79;
+  font-size: 24px;
+  margin-left: 20px;
+  width: 150px;
+}
+
+.overview_desc {
+  font-size: 14px;
+  color: #b4bfd1;
+  margin-left: 20px;
+  width: 140px;
+}

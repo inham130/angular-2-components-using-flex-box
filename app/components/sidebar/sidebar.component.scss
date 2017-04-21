@@ -1,0 +1,182 @@
+:host{
+  display: flex;
+}
+
+$layer-width: 20px;
+$layer-height: 2px;
+$layer-spacing: 4px;
+$total-height: ($layer-height * 3) + ($layer-spacing * 2);
+$layer-color: #35b8eb;
+$transition-speed: 0.4s;
+
+#checkbox {
+  display: none;
+
+  &:checked ~ .sidebar {
+    margin-left: -270px;
+    transition-duration: 0.6s;
+  }
+
+  &:checked ~ label {
+    left: 0px;
+    transition-duration: 0.6s;
+  }
+}
+
+.burger-icon {
+  position: absolute;
+  left: 250px;
+  display: block;
+  width: $layer-width;
+  height: $layer-height;
+  margin: ($layer-height + $layer-spacing + 39px) 0px ($layer-height + $layer-spacing) 0px;
+  background: $layer-color;
+  cursor: pointer;
+  transform-origin: ($layer-width / 2) ($layer-height / 2);
+
+  transition-duration: 0.6s;
+
+  &:before, &:after {
+    position: absolute;
+    left: 0px;
+    width: $layer-width;
+    height: $layer-height + $layer-spacing;
+    box-sizing: border-box;
+    content: "";
+    border-style: solid;
+    border-color: $layer-color;
+    transition: transform $transition-speed;
+    transform-origin: ($layer-width / 2) ($layer-height / 2);
+  }
+
+  &:before {
+    border-width: $layer-height 0px 0px 0px;
+    bottom: $layer-height;
+  }
+
+  &:after {
+    border-width: 0px 0px $layer-height 0px;
+    top: $layer-height;
+  }
+}
+
+@font-face {
+  font-family: 'robotoregular';
+  src: url('/fonts/roboto-regular-webfont.woff') format('woff'),
+  url('/fonts/roboto-regular-webfont.svg#robotoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'noricanregular';
+  src: url('/fonts/norican-regular-webfont.woff') format('woff'),
+  url('/fonts/norican-regular-webfont.svg#noricanregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.sidebar {
+  background: #273140;
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+
+  transition-duration: 0.6s;
+}
+
+.logo {
+  height: 90px;
+  font-size: 36px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  font-family: 'noricanregular';
+
+  .fin {
+    padding-left: 42px;
+    color: #4fc1ee;
+  }
+
+  .dash {
+    color: #fff;
+  }
+}
+
+.menu{
+  font-size: 14px;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.menu__list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.menu__item {
+  height: 54px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+
+  &:hover {
+    background: #1a222f;
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 0px;
+      width: 0px;
+      border: 7px solid transparent;
+      border-left-color: #4fc1ee;
+    }
+  }
+}
+
+.menu__icon {
+  margin-left: 40px;
+}
+
+.menu__link {
+  font-family: 'robotoregular';
+  text-decoration: none;
+  color: #7f96a3;
+  display: inline-block;
+  width: 185px;
+}
+
+.news__count {
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  color: #fff;
+  font-size: 14px;
+  background: #35b8eb;
+  border-radius: 10px;
+  margin-left: 16px;
+  text-align: center;
+}
+
+footer {
+  color: #7f96a3;
+  height: 50px;
+  text-align: center;
+  font-size: 12px;
+  font-family: 'robotoregular';
+  flex: 0 0 auto;
+
+  &:before {
+    content: "";
+    display: block;
+    height: 1px;
+    background: #4f5f6f;
+  }
+}
