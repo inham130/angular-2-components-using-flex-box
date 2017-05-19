@@ -7,8 +7,12 @@
 		"emitDecoratorMetadata": true,
 		"experimentalDecorators": true,
 		"removeComments": false,
-		"noImplicitAny": true,
-		"suppressImplicitAnyIndexErrors": true
+		"noImplicitAny": false,
+		"suppressImplicitAnyIndexErrors": true,
+		"types": [
+			"d3",
+			"node"
+		]
 	},
 	"exclude": [
 		"node_modules"

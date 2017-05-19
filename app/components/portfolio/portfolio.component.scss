@@ -11,7 +11,9 @@ li {
 
 :host {
   display: flex;
+  flex-grow: 1;
 }
+
 
 .portfolio {
   height: 435px;
@@ -54,6 +56,7 @@ li {
 
 .portfolio__date {
   display: flex;
+  margin-right: 30px;
 }
 
 .date {
