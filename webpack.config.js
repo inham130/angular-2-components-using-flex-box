@@ -8,7 +8,7 @@ module.exports = {
         "filename": "./public/[name].js"
     },
     resolve: {
-        extensions: ['.ts', '.tsx', '.js']
+        extensions: ['.js', '.tsx', '.ts']
     },
 
     module: {
@@ -16,7 +16,8 @@ module.exports = {
             {
                 test: /\.tsx?$/,
                 loader: 'ts-loader',
-                exclude: /node_modules/
+                exclude: [/node_modules\/(?!(ng2-.+|ngx-.+))/]
+                //exclude: /node_modules/
             },
             {
                 test: /\.js$/,
