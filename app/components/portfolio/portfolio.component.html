@@ -4,62 +4,24 @@
             PORTFOLIO - AAPL
             <div class="triangle"></div>
         </div>
-
-
-       <!-- <material-datepicker
-                [(date)]="dateTo"
-                (onSelect)="onSelectTo($event)"
-        ></material-datepicker>-->
-
         <div class="portfolio__date">
             <material-datepicker
                     [(date)]="dateFrom"
                     (onSelect)="onSelectFrom($event)"
+                    [rangeStart]="dateStart"
+                    [rangeEnd]="dateEnd"
             ></material-datepicker>
-            <!--<div class="date date_left">
-                30/12/2014
-                <div class="triangle"></div>
-            </div>-->
             <div class="to">
                 to
             </div>
             <material-datepicker
                     [(date)]="dateTo"
                     (onSelect)="onSelectTo($event)"
+                    [rangeStart]="dateStart"
+                    [rangeEnd]="dateEnd"
             ></material-datepicker>
-           <!-- <div class="date date_right">
-                20/02/2015
-                <div class="triangle"></div>
-            </div>-->
-
-
         </div>
     </div>
-    <chart></chart>
-    <!--<div class="prices">
-        <ul class="prices__list">
-            <li class="prices__item">$150</li>
-            <li class="prices__item">$140</li>
-            <li class="prices__item">$130</li>
-            <li class="prices__item">$120</li>
-            <li class="prices__item">$110</li>
-        </ul>
-    </div>
-    <div class="portfolio__content">
-
-    </div>
-    <div class="bottom-date">
-        <div class="arrow__left"></div>
-        <ul class="bottom-date__list">
-            <li class="bottom-date__item">JAN 21</li>
-            <li class="bottom-date__item">JAN 22</li>
-            <li class="bottom-date__item">JAN 23</li>
-            <li class="bottom-date__item">JAN 24</li>
-            <li class="bottom-date__item">JAN 25</li>
-            <li class="bottom-date__item">JAN 26</li>
-            <li class="bottom-date__item">JAN 27</li>
-        </ul>
-        <div class="arrow__right"></div>
-    </div>-->
-
+    <chart
+    ></chart>
 </div>
