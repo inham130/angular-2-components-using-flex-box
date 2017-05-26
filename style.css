@@ -1,25 +1,26 @@
+.line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 2px;
+}
+
 .axis {
     font: 14px sans-serif;
 }
+.g-line, .axis path {
+    visibility: hidden;
+}
 
-.axis path,
-.axis line {
+.grid-line {
     fill: none;
-    stroke: #d6210e;
-    shape-rendering: crispEdges;
+    stroke: #e5eaed;
+    stroke-width: 1px;
+    visibility: visible;
+    stroke-dasharray: 4 3;
 }
 
-.axis path, .axis line{
-    display: none;
-}
-
-.axis-y {
-
-}
-
-.axis-y text {
-    font-size: 14px;
-    fill: #546a79;
+.middle-line {
+    stroke: #35b8eb;
 }
 
 .axis-x text {
@@ -28,10 +29,14 @@
     font-weight: bold;
 }
 
-.line {
-    fill: none;
-    stroke: steelblue;
-    stroke-width: 2px;
+.yaxis-text {
+    font-size: 14px;
+    fill: #546a79;
+}
+
+.middle-line-text {
+    font-size: 14px;
+    fill: #35b8eb;
 }
 
 .area {
@@ -58,7 +63,6 @@
     border-radius: 2px;
 }
 
-/* Creates a small triangle extender for the tooltip */
 .d3-tip:after {
     box-sizing: border-box;
     display: inline;
@@ -71,9 +75,9 @@
     text-align: center;
 }
 
-/* Style northward tooltips differently */
 .d3-tip.n:after {
     margin: -1px 0 0 0;
     top: 100%;
     left: 0;
 }
+

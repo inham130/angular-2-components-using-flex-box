@@ -11,6 +11,8 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { MarketTrendsComponent } from './components/market-trends/market-trends.component';
 import { RecentActivityComponent } from './components/recent-activity/recent-activity.component';
 import { ChartComponent } from './components/chart/chart.component';
+import {ChartService} from "./shared/chart.service";
+import {MarketTrendsChartComponent} from "./components/market-trends-chart/market-trends-chart.component";
 
 @NgModule({
     imports     : [
@@ -26,8 +28,10 @@ import { ChartComponent } from './components/chart/chart.component';
         PortfolioComponent,
         MarketTrendsComponent,
         RecentActivityComponent,
-        ChartComponent
+        ChartComponent,
+        MarketTrendsChartComponent
     ],
+    providers: [ChartService],
     bootstrap   : [AppComponent],
 })
 export class AppModule {
